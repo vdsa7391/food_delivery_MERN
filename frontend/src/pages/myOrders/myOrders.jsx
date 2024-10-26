@@ -16,7 +16,7 @@ const myOrders = () => {
         setData(response.data.data)
     }
 
-   useEffect(()=>{
+   /* useEffect(()=>{
        async function load(){
            if(token){
             await fetchOrders();
@@ -26,7 +26,7 @@ const myOrders = () => {
        }
        load();
         
-    },[token])  
+    },[token]) */  
 
     useEffect(()=>{
         async function l()
