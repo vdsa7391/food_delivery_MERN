@@ -20,7 +20,7 @@ const verify = () => {
         if(response.data.success){
             toast.success("order succefully placed")
             if(token){
-                navigate("/myorders");
+                navigate("/myOrders");
             }else{
                 navigate("/");
             }
