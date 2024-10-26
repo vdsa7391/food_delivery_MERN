@@ -135,7 +135,7 @@ useEffect(()=>{
         <Link_box flag={true} />
       </div>
 
-      <div className="paragraphs">
+      {/* <div className="paragraphs">
         <p>
           Sei già un cliente?
           <span>
@@ -148,7 +148,7 @@ useEffect(()=>{
             <a href=""> Fai clic qui per inserire il tuo codice promozionale</a>
           </span>
         </p>
-      </div>
+      </div> */}
 
       <div className="">
 
