@@ -16,13 +16,13 @@ const myOrders = () => {
         setData(response.data.data)
     }
 
-    useEffect(()=>{
+   /*  useEffect(()=>{
         if(token){
             await fetchOrders();
         }else{
             navigate('/')
         }
-    },[token]) 
+    },[token])  */
 
     useEffect(()=>{
         await fetchOrders();
