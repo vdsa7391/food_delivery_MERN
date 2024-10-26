@@ -25,11 +25,8 @@ const myOrders = () => {
     },[token])
 
     useEffect(()=>{
-        if(token){
-            fetchOrders();
-        }else{
-            navigate('/')
-        }
+        fetchOrders();
+        
     },[])
 
 
