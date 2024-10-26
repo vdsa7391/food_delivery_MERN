@@ -19,7 +19,7 @@ const StoreContextProvider = (props) => {
     const [cartDataFrontend, setCartDataFrontend] = useState({})
 
 // user login
-    const url= "http://localhost:4000";
+    const url= "https://food-delivery-mern-y99l.onrender.com";
     const [token, setToken] = useState("");
     const [user_ID, setUser_ID] = useState("");
 
