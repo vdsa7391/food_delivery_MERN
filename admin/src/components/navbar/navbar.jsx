@@ -9,7 +9,7 @@ const navbar = () => {
     <>
     <div className='navbar'>
         <img src= {asset.logo} alt="" />
-        <p>Admin Panel</p>
+        <p style{{ color: "white"}}>Admin Panel</p>
     </div>
     
     </>
