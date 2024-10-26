@@ -17,16 +17,22 @@ const myOrders = () => {
     }
 
    /*  useEffect(()=>{
-        if(token){
+       async function load(){
+           if(token){
             await fetchOrders();
-        }else{
+            }else{
             navigate('/')
         }
+       }
+       load();
+        
     },[token])  */
 
     useEffect(()=>{
-        await fetchOrders();
-        
+        async function l()
+        {
+            await fetchOrders();}
+        l() ;       
     },[])
 
 
