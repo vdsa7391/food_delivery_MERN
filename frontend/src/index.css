@@ -1,0 +1,53 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  
+  color: #777;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+
+.scroll{
+  background-color: transparent;
+  right: 60px;
+  bottom: 30px;
+  position: fixed;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 9px 25px 0 rgba(132, 128, 177, 0.28);
+  border: none;
+}
+
+
+.discount_content{
+  
+  background-color: rgb(204, 224, 213);
+  width: 80%;
+  margin: auto;
+  padding: 20px 25px;
+  margin-top: 50px;
+  font-size: 16px; 
+  color: black;
+  text-align: center;
+
+}
+
+
+
+
+

@@ -1,0 +1,60 @@
+.order{
+    
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .02);
+
+}
+
+
+.order_box1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.order_box2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.break{
+    border-bottom: 3px solid #ececec;
+}
+
+span{
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    
+}
+
+.radioo{
+    margin-right: 10px;
+    
+}
+
+.order_detail_btn{
+   
+  
+   
+    background-color: #d26e4b;
+    color: white;
+    border-color: rgba(0, 0, 0, .05);
+    text-transform: uppercase;
+    font-size: .97em;
+    letter-spacing: .03em;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    padding: 0 1.2em;
+    
+}
+

@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    background-color: aqua;
+    width: 100%;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+
+
+
+
+.nav_btn{
+    border:2px solid white;
+     padding:7px 15px;
+      font-weight:bolder;
+}

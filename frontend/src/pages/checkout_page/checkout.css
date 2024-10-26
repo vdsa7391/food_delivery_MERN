@@ -1,0 +1,258 @@
+.chekout_container{
+    width: 100%;
+    padding: 50px 100px;
+    
+}
+
+
+.header{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 13px;
+    
+
+}
+
+.links_list {
+    justify-content: left;
+    margin-top: 0px;
+}
+
+.icon{
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.paragraphs{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid  #ececec;
+    margin-bottom: 8px;
+    margin-left: 50px;
+    font-size: 14px;
+    
+}
+
+
+
+
+#form_1{
+    padding-right:30px;
+    width: 45%;
+}
+
+.name_surname{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.name_surname div{
+    width: 48%;
+
+}
+
+
+.order_delivery_details{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.paragraphs p a{
+    color: black;
+   
+}
+
+
+form h3 {
+    font-size: 1.1em;
+    overflow: hidden;
+    padding-top: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+label, legend {
+    font-weight: bold;
+    display: block;
+    font-size: .9em;
+    margin-bottom: .4em;
+}
+
+input[type=email],input[type=text],input[type=date],input[type=number],input[type=tel], select{
+    margin-bottom: 25px;
+    padding: 10px 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 0 .75em;
+    height: 2.507em;
+    font-size: .97em;
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    -webkit-transition: color .3s, border .3s, background .3s, opacity .3s;
+    -o-transition: color .3s, border .3s, background .3s, opacity .3s;
+    transition: color .3s, border .3s, background .3s, opacity .3s;
+
+}
+
+textarea{
+    overflow: auto;
+    font: inherit;
+}
+
+
+
+.order{
+    
+    width: 45%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .02);
+    
+
+}
+
+
+.order_box1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.order_box2{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.break{
+    border-bottom: 3px solid #ececec;
+}
+
+span{
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    
+}
+
+.radioo{
+    margin-right: 10px;
+    
+}
+
+.order_detail_btn{
+   
+  
+   
+    background-color: #d26e4b;
+    color: white;
+    border-color: rgba(0, 0, 0, .05);
+    text-transform: uppercase;
+    font-size: .97em;
+    letter-spacing: .03em;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    border: 1px solid transparent;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    padding: 0 1.2em;
+    margin-top: 80px;
+    margin-left: -200px;
+
+    
+    
+}
+
+
+@media ( max-width: 850px){
+    .chekout_container{
+        padding: 0;
+
+    }
+
+    .order_delivery_details{
+        margin-top: 50px;
+    }
+
+    .header{
+        margin-top: 25px;
+    }
+
+    .span-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .span-container div{
+        margin-top: 10px;
+    }
+
+    .order_detail_btn{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    textarea{
+        width: 80%;
+        border: 1px solid #cecece;
+        
+    }
+    
+}
+
+
+@media ( max-width: 450px){
+
+    .order_delivery_details{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form_1{
+        width: 100%;
+        padding: 45px;
+    }
+
+    #form_2{
+        width: 100%;
+        padding: 45px;
+    }
+
+    .order_detail_btn{
+        margin: 50px;
+    }
+
+    .header{
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+
+    .header svg{
+        font-size: 16px;
+        
+    }
+
+    .paragraphs p,.paragraphs p span {
+        font-size: 12px;
+    }
+
+}
+
+
