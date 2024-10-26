@@ -24,6 +24,17 @@ const myOrders = () => {
         }
     },[token])
 
+    useEffect(()=>{
+        if(token){
+            fetchOrders();
+        }else{
+            navigate('/')
+        }
+    },[])
+
+
+    
+
   return (
     <div className="my-orders">
         <h2>My Orders</h2>
