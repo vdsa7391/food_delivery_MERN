@@ -8,24 +8,21 @@ import { useNavigate } from 'react-router-dom'
 
 const myOrders = () => {
 
-    const{url, token } = useContext(StoreContext)
-    const [data, setData] = useState([])
+    const{url, token , data, fetchOrders} = useContext(StoreContext)
+ 
     const navigate = useNavigate();
 
     
     
-    const fetchOrders = async()=>{
-        const response = await axios.post(url+"/api/order/userOrders", {},{headers : {token}});
-        setData(response.data.data)
-    }
+    
 
    useEffect(()=>{
        
             if(token){
                 fetchOrders();
-            }else{
+            }/* else{
                 navigate('/')
-            }
+            } */
    
         
     },[token]) 
