@@ -94,7 +94,7 @@ const checkout = () => {
         { headers: { token } }
       );
       if (k.data.success) {
-        const { session_url } = res.data;
+        const { session_url } = k.data;
         const r = await axios.post(
           url + "/api/order/clearCartData",
           {},
@@ -107,7 +107,7 @@ const checkout = () => {
         }
         window.location.replace(session_url);
       } else {
-        console.log(res.data);
+        console.log(k.data);
       }
     } else {
       let res = await axios.post(url + "/api/order/placeOrder", orderData);
