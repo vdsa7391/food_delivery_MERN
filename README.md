@@ -48,12 +48,12 @@ A live demo of the project can be found here:
 
 ## Project Structure
 ```
-food-delivery-website/
-├── client/               # React frontend user panel
+food-delivery_MERN/
+├── frontend/               # React frontend user panel
 │   ├── public/           # Public assets
 │   ├── src/              # React source files
 │   └── ...
-├── server/               # Express.js backend
+├── backend/               # Express.js backend
 │   ├── config/           # Database and environment configurations
 │   ├── controllers/      # API controllers
 │   ├── models/           # Mongoose models
@@ -64,7 +64,7 @@ food-delivery-website/
 │   ├── src/              # React source files
 │   └── ...
 |  
-└── README.md
+README.md
 ```
 
 ## Contributing
