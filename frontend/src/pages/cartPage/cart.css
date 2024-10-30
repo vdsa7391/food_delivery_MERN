@@ -89,3 +89,16 @@ table{
     }
 
 }
+
+
+@media (max-width: 380px){
+
+
+    
+    .links_list .link{
+        font-size: 6px;
+        
+    }
+    
+
+}

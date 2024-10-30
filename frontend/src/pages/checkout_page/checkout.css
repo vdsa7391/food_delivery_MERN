@@ -256,3 +256,11 @@ span{
 }
 
 
+
+@media ( max-width: 380px){
+    .header svg{
+        font-size: 12px;
+        
+    }
+}
+

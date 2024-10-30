@@ -98,6 +98,15 @@ const checkout = () => {
     let res = await axios.post(url+"/api/order/placeOrder", orderData, {headers : {token}})
     if( res.data.success){
       const {session_url} = res.data;
+      if(token){
+        const r= await axios.post(url+"/api/order/clearCartData", {},{headers: {token}});
+        if(r.data.success){
+          console.log("user cart is succefully emptied");
+        }
+        else{
+          console.log("error in deleting user cart after placing order");
+        }
+      }
       window.location.replace(session_url);
     }
     else{

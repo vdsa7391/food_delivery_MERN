@@ -3,12 +3,14 @@ import './myOrders.css'
 import {StoreContext} from '../../context/StoreContext'
 import axios from 'axios'
 import {assets} from '../../assets/data.js'
+import { useNavigate } from 'react-router-dom'
 
 
 const myOrders = () => {
 
     const{url, token } = useContext(StoreContext)
     const [data, setData] = useState([])
+    const navigate = useNavigate();
 
     
     
@@ -19,7 +21,12 @@ const myOrders = () => {
 
    useEffect(()=>{
        async function load(){
-            await fetchOrders();
+            if(token){
+                await fetchOrders();
+            }else{
+                navigate('/')
+            }
+           
        }
        load();
         

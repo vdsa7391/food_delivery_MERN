@@ -159,4 +159,22 @@ const updateStatus = async(req,res) =>{
 
 }
 
-export {placeOrder, verifyOrder,userOrders ,listOrders,updateStatus }
+
+
+const clear_cartData = async(req, res)=>{
+    try {
+        
+        await userModel.findByIdAndUpdate(req.body.userId, {cartData:{}} ) 
+        res.josn({success:true,message:"cartdata removed"})
+
+        
+    } catch (error) {
+        console.log(error)
+        res.json({success:false, message: "error in deleting cartData"})
+        
+        
+    }
+
+}
+
+export {placeOrder, verifyOrder,userOrders ,listOrders,updateStatus, clear_cartData }
