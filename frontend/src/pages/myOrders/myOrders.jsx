@@ -7,25 +7,23 @@ import {assets} from '../../assets/data.js'
 
 const myOrders = () => {
 
-    const{url, token, data } = useContext(StoreContext)
+    const{url, token } = useContext(StoreContext)
+    const [data, setData] = useState([])
+
     
     
-    /* const fetchOrders = async()=>{
+    const fetchOrders = async()=>{
         const response = await axios.post(url+"/api/order/userOrders", {},{headers : {token}});
         setData(response.data.data)
-    } */
+    }
 
-   /* useEffect(()=>{
+   useEffect(()=>{
        async function load(){
-           if(token){
             await fetchOrders();
-            }else{
-            navigate('/')
-        }
        }
        load();
         
-    },[token]) */  
+    },[token]) 
 
     
 
