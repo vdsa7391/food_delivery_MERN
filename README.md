@@ -9,7 +9,6 @@ This is a fully functional and responsive food delivery website built using the 
 - Usage
 - Project Structure
 - Contributing
-- License
 
 ## Features
 ### User Features
@@ -26,6 +25,7 @@ This is a fully functional and responsive food delivery website built using the 
 ## Demo
 A live demo of the project can be found here: 
 -**User panel**: https://food-delivery-mern-1-front.onrender.com
+
 -**Admin Panel**: https://food-delivery-mern-1-q5wg.onrender.com
 
 ## Technologies Used
