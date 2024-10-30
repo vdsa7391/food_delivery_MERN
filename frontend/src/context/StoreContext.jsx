@@ -17,6 +17,7 @@ const StoreContextProvider = (props) => {
     const [food_items, setFood_items] = useState([])
     const [cartData_copy, setCartData_copy] = useState([])
     const [cartDataFrontend, setCartDataFrontend] = useState({})
+    const [data, setData] = useState([])
 
 // user login
     const url= "https://food-delivery-mern-y99l.onrender.com";
@@ -375,6 +376,13 @@ const StoreContextProvider = (props) => {
                 }
             
           };
+
+
+          // fetch orders
+          const fetchOrders = async()=>{
+            const response = await axios.post(url+"/api/order/userOrders", {},{headers : {token}});
+            setData(response.data.data)
+        }
         
     
 
@@ -385,10 +393,12 @@ const StoreContextProvider = (props) => {
     useEffect(()=>{    
          async function loadData() {
             await fetchFood_items();
+           
 
             if(localStorage.getItem("token")){
                 setToken(localStorage.getItem("token"))
                 await loadCartData(localStorage.getItem("token"))  
+                await fetchOrders();
             } 
         }
 
@@ -426,6 +436,7 @@ const StoreContextProvider = (props) => {
         main_cart, setMain_cart,
         setSub,
         add_val, subtract_val, handleInputChange,
+        data, setData,fetchOrders
         
        
         
