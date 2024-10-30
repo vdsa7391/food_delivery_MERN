@@ -16,13 +16,27 @@ const myOrders = () => {
         setData(response.data.data)
     }
 
-    useEffect(()=>{
-        if(token){
-            fetchOrders();
-        }else{
+   /* useEffect(()=>{
+       async function load(){
+           if(token){
+            await fetchOrders();
+            }else{
             navigate('/')
         }
-    },[token])
+       }
+       load();
+        
+    },[token]) */  
+
+    useEffect(()=>{
+        async function l()
+        {
+            await fetchOrders();}
+        l() ;       
+    },[])
+
+
+    
 
   return (
     <div className="my-orders">
