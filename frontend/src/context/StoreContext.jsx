@@ -18,7 +18,7 @@ const StoreContextProvider = (props) => {
     const [cartData_copy, setCartData_copy] = useState([])
     const [cartDataFrontend, setCartDataFrontend] = useState({})
     const [data, setData] = useState([])
-
+    
 // user login
     const url= "https://food-delivery-mern-y99l.onrender.com";
     const [token, setToken] = useState("");
@@ -109,6 +109,13 @@ const StoreContextProvider = (props) => {
             console.log("error in fetching cartItem object")
         }   
         
+    }
+
+
+    //fetch orders
+    const fetchOrders = async()=>{
+        const response = await axios.post(url+"/api/order/userOrders", {},{headers : {token}});
+        setData(response.data.data)
     }
 
     
@@ -378,12 +385,6 @@ const StoreContextProvider = (props) => {
           };
 
 
-          // fetch orders
-          const fetchOrders = async()=>{
-            const response = await axios.post(url+"/api/order/userOrders", {},{headers : {token}});
-            setData(response.data.data)
-        }
-        
     
 
   
@@ -398,7 +399,7 @@ const StoreContextProvider = (props) => {
             if(localStorage.getItem("token")){
                 setToken(localStorage.getItem("token"))
                 await loadCartData(localStorage.getItem("token"))  
-                await fetchOrders();
+               
             } 
         }
 
@@ -436,7 +437,8 @@ const StoreContextProvider = (props) => {
         main_cart, setMain_cart,
         setSub,
         add_val, subtract_val, handleInputChange,
-        data, setData,fetchOrders
+        fetchOrders,data, setData
+        
         
        
         

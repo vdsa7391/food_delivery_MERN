@@ -80,10 +80,10 @@ const checkout = () => {
     e.preventDefault();
     
 
-    if(data.delivery_flag.localeCompare("true")==0){
+    /* if(data.delivery_flag.localeCompare("true")==0){
       setSub(prev => prev+5)
       data["delivery_flag"]="false"
-    }
+    } */
 
 
 
@@ -91,7 +91,7 @@ const checkout = () => {
     let orderData = {
       address: data, 
       items:main_cart,
-      amount: sub
+      amount: newTotal
 
     }
 
