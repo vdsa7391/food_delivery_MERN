@@ -24,6 +24,7 @@ This is a fully functional and responsive food delivery website built using the 
 
 ## Demo
 A live demo of the project can be found here: 
+
 -**User panel**: https://food-delivery-mern-1-front.onrender.com
 
 -**Admin Panel**: https://food-delivery-mern-1-q5wg.onrender.com
@@ -74,9 +75,7 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature-branch`).
 5. Open a Pull Request.
 
-## License
-This project is licensed under the MIT License.
-
+   
 ---
 
 This README file covers the basic project information, setup instructions, usage guide, and project structure for easy understanding and quick onboarding for any new developer or contributor. Let me know if there’s anything you’d like to customize!
