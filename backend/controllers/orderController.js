@@ -163,8 +163,14 @@ const updateStatus = async(req,res) =>{
 
 const clear_cartData = async(req, res)=>{
     try {
-        
-        await userModel.findByIdAndUpdate(req.body.userId, {cartData:{}} ) 
+        let userData = await userModel.findOne({_id: req.body.userId});
+        let cartItem = await userData.cartItem;
+        let cartData = await userData.cartData;
+        cartData= {};
+        cartData["total"]=0;
+        cartData["count"]=0;
+        cartItem={};
+        await userModel.findByIdAndUpdate(req.body.userId, {cartData, cartItem} ) 
         res.josn({success:true,message:"cartdata removed"})
 
         

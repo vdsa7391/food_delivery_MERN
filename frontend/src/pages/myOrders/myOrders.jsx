@@ -20,15 +20,13 @@ const myOrders = () => {
     }
 
    useEffect(()=>{
-       async function load(){
+       
             if(token){
-                await fetchOrders();
+                fetchOrders();
             }else{
                 navigate('/')
             }
-           
-       }
-       load();
+   
         
     },[token]) 
 
