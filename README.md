@@ -1,6 +1,7 @@
 # 🍔 Food Delivery Website
 
-This is a fully functional and responsive food delivery website built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. Users can browse through a variety of food items, place orders, and manage their orders. Additionally, there is an admin panel that allows administrators to monitor orders, add new food items, and perform other management tasks.
+This is a fully functional and responsive food delivery website clone of "KISEN Sushi Milano" built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. Users can browse through a variety of food items, place orders, and manage their orders. Additionally, there is an admin panel that allows administrators to monitor orders, add new food items, and perform other management tasks.
+(This website is a clone of a popular sushi restaurant in milano.The design I implemented is based on the original website as it appeared in October 2024. This was to ensure that even if the original site undergoes changes in the future, my project will still reflect the design and features available during that specific period.") 
 
 ## Table of Contents
 - Features
